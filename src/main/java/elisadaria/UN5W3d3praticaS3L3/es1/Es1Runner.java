@@ -1,10 +1,12 @@
 package elisadaria.UN5W3d3praticaS3L3.es1;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 @Component
+@Order(0)
 public class Es1Runner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
@@ -16,6 +18,7 @@ public class Es1Runner implements CommandLineRunner {
 
         System.out.println(ud.getNomeCompleto());
         System.out.println(ud.getEta());
+        System.out.println("*************************************");
 
 
     }
